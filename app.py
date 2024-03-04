@@ -22,13 +22,12 @@ if hist_button: # al hacer clic en el botón
 # crear una casilla de verificación
 build_histogram = st.checkbox('Construir un histograma')
 
-car_data = pd.read_csv('vehicles_us.csv') # leer los datos
-fig = px.scatter(car_data, x="odometer", y="price") # crear un gráfico de dispersión
-fig.show() # crear gráfico de dispersión 
-
 if build_histogram: # si la casilla de verificación está seleccionada
     st.write('Construir un histograma para la columna odómetro')
 
-
-
+    car_data = pd.read_csv('vehicles_us.csv') # leer los datos
+    
+    fig = px.scatter(car_data, x="odometer", y="price") # crear un gráfico de dispersión
+    
+    fig.show() # crear gráfico de dispersión 
 
