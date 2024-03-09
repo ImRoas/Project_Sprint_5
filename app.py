@@ -3,6 +3,7 @@ import plotly.express as px
 import streamlit as st
 
 car_data = pd.read_csv('vehicles_us.csv') # leer los datos
+car_data['model_year'] = car_data['model_year'].astype('int')
 
 st.header('Gráficos de autos')  
 st.write(car_data) 
