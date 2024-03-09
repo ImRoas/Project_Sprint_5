@@ -29,8 +29,9 @@ if build_histogram: # si la casilla de verificación está seleccionada
     
     fig = px.scatter( # crear un gráfico de dispersión
         car_data, 
-        x="odometer", 
-        y="price"
+        x="type", 
+        y="model_year",
+        color='model'
     ) 
 
     # st.line_chart(car_data, x='odometer', y='price')
