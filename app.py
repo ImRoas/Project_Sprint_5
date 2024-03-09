@@ -17,7 +17,6 @@ if hist_button: # al hacer clic en el botón
     fig = px.histogram(
         car_data, 
         x="odometer",
-        y='type',
         color='model'
     )
         
