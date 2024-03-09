@@ -21,7 +21,7 @@ if hist_button: # al hacer clic en el botón
     )
         
     # mostrar un gráfico Plotly interactivo
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, theme='streamlit', use_container_width=True)
 
 # crear una casilla de verificación
 build_histogram = st.checkbox('Construir un histograma')
@@ -41,5 +41,5 @@ if build_histogram: # si la casilla de verificación está seleccionada
     # st.line_chart(car_data, x='odometer', y='price')
     
     fig.show() # crear gráfico de dispersión 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, theme='streamlit', use_container_width=True)
 
