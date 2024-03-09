@@ -27,7 +27,7 @@ if build_histogram: # si la casilla de verificación está seleccionada
 
     #car_data = pd.read_csv('vehicles_us.csv') # leer los datos
     
-    fig = px.scatter( # crear un gráfico de dispersión
+    fig = px.bar( # crear un gráfico de dispersión
         car_data, 
         x="type", 
         y="model_year",
@@ -36,6 +36,6 @@ if build_histogram: # si la casilla de verificación está seleccionada
 
     # st.line_chart(car_data, x='odometer', y='price')
     
-    #fig.show() # crear gráfico de dispersión 
-    st.plotly_chart(fig, use_container_width=True)
+    fig.show() # crear gráfico de dispersión 
+    # st.plotly_chart(fig, use_container_width=True)
 
