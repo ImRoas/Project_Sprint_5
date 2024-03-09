@@ -37,5 +37,5 @@ if build_histogram: # si la casilla de verificación está seleccionada
     # st.line_chart(car_data, x='odometer', y='price')
     
     fig.show() # crear gráfico de dispersión 
-    # st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True)
 
