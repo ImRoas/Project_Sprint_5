@@ -27,11 +27,11 @@ if build_histogram: # si la casilla de verificación está seleccionada
 
     #car_data = pd.read_csv('vehicles_us.csv') # leer los datos
     
-    fig = px.bar( # crear un gráfico de dispersión
+    fig = px.histogram( # crear un gráfico de dispersión
         car_data, 
-        x="type", 
+        x="model", 
         y="model_year",
-        color='model'
+        color='type'
     ) 
 
     # st.line_chart(car_data, x='odometer', y='price')
