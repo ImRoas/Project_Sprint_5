@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-car_data = pd.read_csv('/datasets/vehicles_us.csv') # leer los datos
+car_data = pd.read_csv('vehicles_us.csv') # leer los datos
 
 # car_data['model_year'] = car_data['model_year'].fillna(value='')
 # car_data['model_year'] = car_data['model_year'].replace('', 0)
